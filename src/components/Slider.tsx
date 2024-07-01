@@ -19,7 +19,7 @@ interface SliderProps {
 export default function Slider({ children, settings }: SliderProps) {
   return (
     <div className="w-full">
-      <Swiper className="w-11/12"
+      <Swiper className="m-4"
         modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
         {...settings}
       >

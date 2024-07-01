@@ -90,7 +90,7 @@ export default function Player({ data }: { data: Music[] }) {
   }, [currentSound, data, index]);
 
   return (
-    <section className="text-slate-50 text-xl flex flex-col lg:flex-row justify-center items-center max-w-screen-xl m-2 sm:m-4 rounded-sm bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] py-2 px-2 lg:px-10">
+    <section className="text-slate-50 text-xl flex flex-col lg:flex-row justify-center items-center max-w-screen-xl m-2 sm:m-4 rounded-sm bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] py-2 px-2">
       <audio
         autoPlay={false}
         ref={audioRef}
@@ -108,7 +108,7 @@ export default function Player({ data }: { data: Music[] }) {
       >
         <source type="audio/mpeg" src={currentSound.url}></source>
       </audio>
-      <div className="flex w-full justify-start gap-x-3 flex-col lg:w-1/3">
+      <div className="flex w-full justify-start gap-x-3 flex-col lg:w-1/3 lg:ml-4">
         <p>Musica: {currentSound.nome}</p>
         <p>Artista: {currentSound.artista}</p>
       </div>
