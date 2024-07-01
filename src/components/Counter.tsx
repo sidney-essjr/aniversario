@@ -5,7 +5,7 @@ export default function Counter() {
 
   return (
     <section className="max-w-screen-xl p-2 gap-x-2 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] m-2 sm:m-4 rounded-sm flex justify-center">
-      <div className="text-center gap-y-5 py-4 sm:py-10 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] flex-1 rounded-sm text-slate-50 grid place-content-center text-5xl sm:text-7xl">
+      <div className="flex-1 text-center gap-y-5 py-4 sm:py-10 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] rounded-sm text-slate-50 grid place-content-center text-5xl sm:text-7xl">
         <Countdown
           date={eventDate.getTime()}
           intervalDelay={0}
@@ -14,7 +14,7 @@ export default function Counter() {
             return <p>{days}</p>;
           }}
         ></Countdown>
-        <p className="text-base sm:text-2xl">dias</p>
+        <p className="text-xl sm:text-2xl">dias</p>
       </div>
       <div className="flex-1 text-center gap-y-5 py-4 sm:py-10 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] rounded-sm text-slate-50 grid place-content-center text-5xl sm:text-7xl">
         <Countdown

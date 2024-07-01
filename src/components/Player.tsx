@@ -140,7 +140,7 @@ export default function Player({ data }: { data: Music[] }) {
           </div>
         </div>
         <input
-          className="p-1 w-16 sm:w-32"
+          className=" w-16 h-1 sm:w-32"
           type="range"
           onChange={(e) => handleVolume(e, Number(e.target.value))}
           max={1}
