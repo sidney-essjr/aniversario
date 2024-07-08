@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
+import { sendEmail } from "./helpers/functions/sendEmail";
 
-type ConfirmarPresencaType = {
+export type ConfirmarPresencaType = {
   name: string;
   confirmation: string;
   companion: number;
@@ -8,19 +9,19 @@ type ConfirmarPresencaType = {
 };
 
 export default function ConfirmarPresenca() {
-  const {
-    register,
-    reset,
-    handleSubmit,
-    watch,
-  } = useForm<ConfirmarPresencaType>();
+  const { register, reset, handleSubmit, watch } =
+    useForm<ConfirmarPresencaType>();
 
   const isCompanion = watch("confirmation");
 
-  function onSubmit(data: ConfirmarPresencaType) {
-    console.log(data);
-    window.alert("Resposta enviada!");
-    reset();
+  async function onSubmit(data: ConfirmarPresencaType) {
+    const response = await sendEmail(data);
+    console.log(response)
+
+    if (response) {
+      window.alert("Resposta enviada!");
+      reset();
+    }
   }
 
   return (
@@ -57,16 +58,16 @@ export default function ConfirmarPresenca() {
             className="w-20 rounded-sm text-red-800 p-2 text-center border-[1px] border-red-800 outline-red-800"
           />
         </div>
-          {isCompanion === "true" && (
-            <div className="flex flex-col mt-3">
-              <label htmlFor="name">Seus acompanhantes</label>
-              <textarea
-                placeholder="Digite o nome de seus acompanhantes"
-                {...register("companionNames")}
-                className="text-red-800 p-2 rounded-sm outline-red-800 border-[1px] border-red-800"
-              />
-            </div>
-          )}
+        {isCompanion === "true" && (
+          <div className="flex flex-col mt-3">
+            <label htmlFor="name">Seus acompanhantes</label>
+            <textarea
+              placeholder="Digite o nome de seus acompanhantes"
+              {...register("companionNames")}
+              className="text-red-800 p-2 rounded-sm outline-red-800 border-[1px] border-red-800"
+            />
+          </div>
+        )}
         <button className="py-3 mt-2 px-5 rounded-sm text-slate-50 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)]">
           Enviar
         </button>

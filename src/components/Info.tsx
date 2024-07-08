@@ -13,12 +13,12 @@ export default function Info() {
         <div className="flex justify-between min-w-36 items-center">
           <img
             className="w-36 h-56 sm:w-72 sm:h-96 -rotate-3"
-            src="https://firebasestorage.googleapis.com/v0/b/meus-15-anos-25-anos-depois.appspot.com/o/image%2Fmosaic1.jpeg?alt=media&token=19ee6476-94b6-4902-aad5-2d4b9a35d977"
+            src="https://firebasestorage.googleapis.com/v0/b/meus-15-anos-25-anos-depois.appspot.com/o/image%2FImg.jpeg?alt=media&token=480e0564-7098-4ce1-bf02-18d3efaec6db"
             alt=""
           />
-          <h1 className=" text-2xl sm:text-3xl  md:text-4xl lg:text-6xl p-4 sm:p-16">
-            Vocé esta convidado a participar da minha festa de 15 anos, 25 anos
-            depois.
+          <h1 className=" text-2xl sm:text-3xl  md:text-4xl lg:text-6xl pl-4 py-4 sm:pl-16">
+            Vamos brindar à vida e o futuro? Sua presença tornará este momento
+            ainda mais especial e inesquecíveis.
           </h1>
         </div>
         <div className="flex  flex-col md:flex-row">
