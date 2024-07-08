@@ -4,9 +4,9 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 export default function MapLocation() {
   return (
-    <section className="m-2 sm:m-4 p-2 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)]">
+    <section className=" m-2 sm:m-4 p-2 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)]">
       <MapContainer
-        className="h-80"
+        className="z-0 h-80"
         center={[-27.639088628995072, -48.67238247361751]}
         zoom={15}
       >
