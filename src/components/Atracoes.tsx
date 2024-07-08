@@ -6,7 +6,7 @@ export default function Atracoes() {
           <img
             src="/cardapioBebidas.png"
             alt=""
-            className="hover:scale-[4]  active:scale-[4]"
+            className="active:absolute active:w-72 hover:absolute hover:w-72"
           />
           <div className="p-4 flex flex-col place-content-center">
             <h2 className="text-xl font-bold">
@@ -27,7 +27,7 @@ export default function Atracoes() {
           <img
             src="/plataforma.gif"
             alt=""
-            className="hover:scale-[4] active:scale-[4]"
+            className="active:absolute active:w-72 hover:absolute hover:w-72"
           />
         </div>
       </div>
