@@ -41,9 +41,6 @@ export const image: Image[] = [
     url: "https://firebasestorage.googleapis.com/v0/b/meus-15-anos-25-anos-depois.appspot.com/o/image%2Fmosaic4.jpeg?alt=media&token=2f8577b4-a5ec-45fb-bcc1-63cff0aedf6c",
   },
   {
-    url: "https://firebasestorage.googleapis.com/v0/b/meus-15-anos-25-anos-depois.appspot.com/o/image%2FImg.jpeg?alt=media&token=480e0564-7098-4ce1-bf02-18d3efaec6db",
-  },
-  {
     url: "https://firebasestorage.googleapis.com/v0/b/meus-15-anos-25-anos-depois.appspot.com/o/image%2Fft6.jpeg?alt=media&token=e631c114-074c-42f1-9cf7-4c1fa5e7844c",
   },
   {

@@ -35,7 +35,7 @@ export default function Info() {
             </div>
             <div className="my-4">
               <p>
-                <strong>Data</strong>: <small>31/08/2024</small>
+                <strong>Data</strong>: 31/08/2024 - <strong>20h</strong>
               </p>
               <a
                 href="https://www.google.com/maps/place/Centro+Eventos+Palhoca/@-27.6391779,-48.6742327,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x9527358165421895:0x87be80f15bdf90b5!2sAv.+Cl%C3%A1udio+Zacchi,+415+-+Passa+Vinte,+Palho%C3%A7a+-+SC,+88132-080!2m2!1d-48.6723969!2d-27.6391831!3m5!1s0x9527358165421895:0x87be80f15bdf90b5!8m2!3d-27.6391813!4d-48.6724082!16s%2Fg%2F11s4_hl_72?entry=ttu"
@@ -44,10 +44,10 @@ export default function Info() {
                 <p>
                   <strong>Local</strong>: Centro de eventos palhoça
                 </p>
-                <p>
-                  <strong>Traje</strong>: Social Esporte
-                </p>
               </a>
+              <p>
+                <strong>Traje</strong>: Social Esporte
+              </p>
             </div>
             <div>
               <button
