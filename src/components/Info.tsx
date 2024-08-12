@@ -51,7 +51,6 @@ export default function Info() {
             </div>
             <div>
               <button
-                disabled
                 onClick={() => setOpenModalConfirmation(true)}
                 className="p-3 my-4 max-w-[180px] tex font-bold bg-white hover:bg-slate-100 text-red-800 rounded-sm"
               >
