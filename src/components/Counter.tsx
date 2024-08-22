@@ -1,7 +1,7 @@
 import Countdown from "react-countdown";
 
 export default function Counter() {
-  const eventDate = new Date(2024, 7, 31, 22, 0, 0);
+  const eventDate = new Date(2024, 7, 31, 21, 55, 0);
 
   return (
     <section className="max-w-screen-xl p-2 gap-x-2 bg-gradient-to-br from-[rgba(120,0,0,1)] to-[rgba(193,18,31,0.5)] m-2 sm:m-4 rounded-sm flex justify-center">
